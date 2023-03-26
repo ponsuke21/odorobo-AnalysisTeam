@@ -70,6 +70,10 @@ body {
 	background:#fff;
 }
 
+#form #float {
+    float: left;
+}
+
 #main {
     margin-top: 20px;
     margin-left: 10%;

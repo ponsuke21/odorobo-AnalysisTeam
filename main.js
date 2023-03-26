@@ -8,7 +8,7 @@ var xobj = new XMLHttpRequest();
 xobj.open("get","password.txt");
 xobj.onreadystatechange = function() {
     if (xobj.readyState == 4 && xobj.status == 200) {
-        document.getElementById("sha256").innerHTML = xobj.responseText;
+        sha256.textContent = xobj.responseText;
     }
 }
 xobj.send();
