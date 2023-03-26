@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <title>にゃんこ大泥棒解析班</title>
         <meta name="author" content="pon_suke">
         <link rel="icon" href="favicons/favicon.ico">
@@ -25,7 +25,7 @@
         <div id="modal-overlay"></div>
         <div id="form">
             <p id="message">パスワードを入力</p>
-            <input type="text" id="password">
+            <input type="text" name="password" id="password" autocomplete="on">
             <input type="button" value="ログイン" onclick="login();"/>
         </div>
         <div id="main">
