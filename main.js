@@ -8,10 +8,10 @@ var xobj = new XMLHttpRequest();
 xobj.open("get","password.txt");
 xobj.onreadystatechange = function() {
     if (xobj.readyState == 4 && xobj.status == 200) {
-        sha256.textContent = xobj.responseText;
+        sha256.innerHTML = xobj.responseText;
     }
 }
-xobj.send(null);
+xobj.send();
 
 
 function hash(text) {
