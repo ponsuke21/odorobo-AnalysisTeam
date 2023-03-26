@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>にゃんこ大泥棒解析班</title>
+        <meta name="author" content="pon_suke">
+        <link rel="icon" href="favicons/favicon.ico">
+        <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="sha256.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1><img src="img/top.png">にゃんこ大泥棒解析班</h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">アセット</a></li>
+                <li><a href="#">通信データ</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div id="modal-overlay"></div>
+        <div id="form">
+            <p id="message">パスワードを入力</p>
+            <input type="text" id="password">
+            <input type="button" value="ログイン" onclick="OnButtonClick();"/>
+            <p>SHA-256:</p><p id="sha256"></p>
+        </div>
+        <div id="main">
+            <p id="hoge">安心安全</p>
+        </div>
+    </body>
+</html>

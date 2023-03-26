@@ -1,10 +1,30 @@
 window.onload = function() {
-    var hoge_element = document.getElementById("hoge");
-    var i=0;
-    var hoge_color=["#ff5353","#ffcf53","#e8ff53","#53ff5d","#53ffbc","#5393ff","#ca53ff","#ff53bd"]
-    setInterval(() => {
-        hoge_element.style.color = hoge_color[i];
-        i++;
-        if(i==8){i=0;}
-    }, 200);
+    var modal_overlay_element = document.getElementById("modal-overlay");
+    modal_overlay_element.style.display = "block";
 }
+
+var sha256 = document.getElementById("sha256")
+var xobj = new XMLHttpRequest();
+xobj.open("get","password.txt");
+xobj.onreadystatechange = function() {
+    if (xobj.readyState == 4 && xobj.status == 200) {
+        sha256.textContent = xobj.responseText;
+    }
+}
+xobj.send(null);
+
+
+function hash(text) {
+    const sha = new jsSHA('SHA-256', 'TEXT');
+    sha.update(text);
+    return sha.getHash('HEX');
+  }
+
+var text = document.getElementById('password');
+text.oninput = inputChange;
+form.addEventListener('submit', function (event) {
+    const password = document.getElementById('password').value;
+    const hash = hash(password);
+    console.log(hash);
+    event.preventDefault();
+  });
