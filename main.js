@@ -12,6 +12,8 @@ function login() {
                 modal_overlay_element.style.display = "none";
                 var form_element = document.getElementById("form");
                 form_element.style.display = "none";
+                var menu_element = document.getElementById("menu");
+                menu_element.style.display = "flex";
             }
         }
     }

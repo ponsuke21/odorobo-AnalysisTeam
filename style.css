@@ -54,9 +54,51 @@ body {
 }
 
 
+/* メニュー */
+
+#header ul {
+    display: none;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+}
+
+#header li {
+    list-style: none;
+    font-size: 24px;
+}
+
+#header a {
+    display: block;
+    margin-right: 18px;
+    color: #33ccff;
+}
+
+#header a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    #header ul {
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+    
+    #header li {
+        font-size: 16px;
+    }
+    
+    #header a {
+        margin-right: 12px;
+    }
+
+}
+
+
 /* パスワード入力フォーム */
 
-#modal-overlay{
+#modal-overlay {
 	z-index: 1;
 	display: block;
 	position: fixed;
