@@ -4,16 +4,15 @@ function login() {
     xobj.open("get","password.txt");
     xobj.onreadystatechange = function() {
         if (xobj.readyState == 4 && xobj.status == 200) {
-            var password = document.getElementById('password').value;
-            document.getElementById("password").value = '';
+            var password = document.getElementById("password").value;
+            document.getElementById("password").value = "";
             var hash = hashing(password);
             if (hash == xobj.responseText) {
-                var modal_overlay_element = document.getElementById("modal-overlay");
-                modal_overlay_element.style.display = "none";
-                var form_element = document.getElementById("form");
-                form_element.style.display = "none";
-                var menu_element = document.getElementById("menu");
-                menu_element.style.display = "flex";
+                document.getElementById("modal-overlay").style.display = "none";
+                document.getElementById("form").style.display = "none";
+                document.getElementById("menu").style.display = "flex";
+                document.getElementById("main").style.display = "none";
+                document.getElementById("home").style.display = "block";
             }
         }
     }

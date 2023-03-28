@@ -2,10 +2,10 @@
 /* body */
 
 body {
-    font-family: system-ui;
     margin: 0;
     padding: 0;
     background-color: #ccf2ff;
+    font-family: system-ui;
 }
 
 
@@ -121,7 +121,7 @@ body {
 	background: #fff;
 }
 
-#form #message {
+#form p {
     margin: 3px;
     margin-top: 12px;
     margin-bottom: 0px;
@@ -142,7 +142,7 @@ body {
 
 @media screen and (max-width: 480px) {
 
-    #form #message {
+    #form p {
         margin: 2px;
         margin-top: 8px;
         margin-bottom: 0px;
@@ -164,16 +164,77 @@ body {
 }
 
 
-/* （仮） */
+/* 内容 */
 
 #main {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
+    padding: 24px;
     background-color: white;
 }
 
-#hoge {
-    margin: 0px;
-    font-size: 60px;
+#home {
+    display: none;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 24px;
+    background-color: white;
+}
+
+#assets {
+    display: none;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 24px;
+    background-color: white;
+}
+
+#communication {
+    display: none;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 24px;
+    background-color: white;
+}
+
+#contact {
+    display: none;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 24px;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+
+    #main {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    #home {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    #assets {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    #communication {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    #contact {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
 }
