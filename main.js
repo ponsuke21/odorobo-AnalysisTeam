@@ -24,3 +24,11 @@ function hashing(text) {
     sha.update(text);
     return sha.getHash('HEX');
 }
+
+function page(idName) {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("assets").style.display = "none";
+    document.getElementById("communication").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById(idName).style.display = "block";
+}
