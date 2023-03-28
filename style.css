@@ -74,7 +74,7 @@ body {
     color: #33ccff;
 }
 
-#header a:hover {
+#header #menu #li-home {
     text-decoration: none;
 }
 
@@ -172,6 +172,10 @@ body {
     margin-right: 10%;
     padding: 24px;
     background-color: white;
+}
+
+#main p {
+    margin: 0px;
 }
 
 #home {

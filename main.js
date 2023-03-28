@@ -31,4 +31,9 @@ function page(idName) {
     document.getElementById("communication").style.display = "none";
     document.getElementById("contact").style.display = "none";
     document.getElementById(idName).style.display = "block";
+    document.getElementById("li-home").style.textDecoration = "underline";
+    document.getElementById("li-assets").style.textDecoration = "underline";
+    document.getElementById("li-communication").style.textDecoration = "underline";
+    document.getElementById("li-contact").style.textDecoration = "underline";
+    document.getElementById("li-" + idName).style.textDecoration = "none";
 }
