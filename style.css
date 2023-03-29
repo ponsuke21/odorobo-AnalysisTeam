@@ -187,6 +187,23 @@ body {
     background-color: white;
 }
 
+#home h2 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+#home #history {
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+#home iframe {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 600px;
+}
+
 #assets {
     display: none;
     margin-top: 30px;
@@ -224,6 +241,12 @@ body {
     #home {
         margin-top: 20px;
         padding: 16px;
+    }
+
+    #home iframe {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
     }
 
     #assets {
