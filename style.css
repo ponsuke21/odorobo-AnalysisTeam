@@ -197,10 +197,15 @@ body {
     margin-bottom: 24px;
 }
 
+#home #month {
+    margin-left: 5%;
+    margin-bottom: 6px;
+}
+
 #home iframe {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
     height: 600px;
 }
 
@@ -243,10 +248,8 @@ body {
         padding: 16px;
     }
 
-    #home iframe {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
+    #home #month {
+        margin-bottom: 4px;
     }
 
     #assets {

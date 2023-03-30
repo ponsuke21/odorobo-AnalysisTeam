@@ -37,3 +37,14 @@ function page(idName) {
     document.getElementById("li-contact").style.textDecoration = "underline";
     document.getElementById("li-" + idName).style.textDecoration = "none";
 }
+
+var month = document.getElementById("month");
+var now = new Date();
+var nowYear = now.getFullYear();
+var nowMonth = now.getMonth() + 1;
+month.value = nowYear + "-" + ("0" + nowMonth).slice(-2);
+var eventIframe = document.getElementById("event-iframe");
+eventIframe.src = "https://odorobo-ed9d4.appspot.com/createDetailHtmlManagementNews?newsId=" + month.value.slice(2,4) + month.value.slice(-2);
+month.onchange = function() {
+    eventIframe.src = "https://odorobo-ed9d4.appspot.com/createDetailHtmlManagementNews?newsId=" + month.value.slice(2,4) + month.value.slice(-2);
+};

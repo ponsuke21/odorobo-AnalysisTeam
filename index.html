@@ -9,8 +9,6 @@
         <link rel="icon" href="favicons/favicon.ico">
         <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="main.js"></script>
-        <script type="text/javascript" src="sha256.js"></script>
     </head>
     <body>
         <div id="header">
@@ -40,7 +38,8 @@
                 <li>パスワードの入力フォームを作成 (2023/3/27)</li>
             </ul>
             <h2>イベント情報</h2>
-            <iframe id="event-iframe" src="https://odorobo-ed9d4.appspot.com/createDetailHtmlManagementNews?newsId=2303"></iframe>
+            <input type="month" id="month" min="2021-06" max="2025-12">
+            <iframe id="event-iframe"></iframe>
         </div>
         <div id="assets">
             <p>アセット</p>
@@ -52,4 +51,6 @@
             <p>お問い合わせ</p>
         </div>
     </body>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="sha256.js"></script>
 </html>
