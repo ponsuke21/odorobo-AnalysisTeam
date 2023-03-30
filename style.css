@@ -168,6 +168,7 @@ body {
 
 #main {
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 24px;
@@ -181,6 +182,7 @@ body {
 #home {
     display: none;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 24px;
@@ -195,6 +197,7 @@ body {
 #home #history {
     margin-top: 0px;
     margin-bottom: 24px;
+    padding-left: 30px;
 }
 
 #home #month {
@@ -212,6 +215,7 @@ body {
 #assets {
     display: none;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 24px;
@@ -221,6 +225,7 @@ body {
 #communication {
     display: none;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 24px;
@@ -230,6 +235,7 @@ body {
 #contact {
     display: none;
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
     padding: 24px;
@@ -240,11 +246,13 @@ body {
 
     #main {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 16px;
     }
 
     #home {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 16px;
     }
 
@@ -254,16 +262,19 @@ body {
 
     #assets {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 16px;
     }
 
     #communication {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 16px;
     }
 
     #contact {
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 16px;
     }
 
